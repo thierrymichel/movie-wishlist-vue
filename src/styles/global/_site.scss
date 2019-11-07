@@ -1,0 +1,26 @@
+.site {
+  display: grid;
+  grid-template-areas:
+    "nav main"
+    "footer footer";
+  grid-template-columns: $site-nav-width 1fr;
+  grid-template-rows: 1fr $site-footer-height;
+  min-height: 100vh;
+  color: $c-light;
+  background-color: $c-darker;
+}
+
+.site__nav {
+  grid-area: nav;
+  background-color: $c-dark;
+}
+
+.site__main {
+  grid-area: main;
+  padding: 4rem;
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: $c-darkest;
+}
