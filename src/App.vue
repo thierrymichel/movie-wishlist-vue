@@ -3,7 +3,7 @@
     <Nav />
     <main class="site__main">
       <h1>Movie wishlist</h1>
-      <Listing />
+      <ul class="listing"></ul>
     </main>
     <Footer />
   </div>
@@ -11,14 +11,12 @@
 
 <script>
 import Footer from "./components/Footer.vue";
-import Listing from "./components/Listing.vue";
 import Nav from "./components/Nav.vue";
 
 export default {
   name: "app",
   components: {
     Footer,
-    Listing,
     Nav
   }
 };
